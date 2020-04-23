@@ -1,0 +1,26 @@
+.c-contact{
+  display: block;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  text-decoration: underline;
+  color: color(d, -5);
+  transition: all 0.2s ease-out;
+  transform: scale(1);
+  
+  &:visited {
+    color: color(d, -5);
+  }
+
+  &:hover, &:focus{
+    color: color(d, -2);
+    text-decoration: underline;
+  }
+  &:active{
+    color: color(d, 0);
+    transform: scale(0.98);
+    text-decoration: underline;
+  }
+  &:visited {
+
+  }
+}
