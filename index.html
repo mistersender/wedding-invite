@@ -17,6 +17,7 @@
   <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
   <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
   <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="assets/css/site.css">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -32,18 +33,37 @@
 <main>
   <article class="c-page c-page--resume o-wrapper is-active">
     <section class="c-card c-card--objective">
-      <h3 class="c-card__header">When &amp; Where</h3>
-      <p>Friday, May 1<sup>st</sup>, 6:30pm EST</p>
-      <p>Will post stream link here soon!</p>
-      <!-- <p>Stream it Here: <a class="c-contact" href="http://bit.ly/keener2020stream" target="_blank">http://bit.ly/keener2020stream</a></p> -->
-      <p><a class="c-contact" href="http://bit.ly/keener2020album" target="_blank">Share Photos Here</a></p></p>
+      <p class="c-date-and-time">Friday, May 1<sup>st</sup>, 6:30pm EST</p>
+      <div class="c-social">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRzwKMbakQ6L5Lq7z5KMrGUsjnmzuPvQibxvVagal6wId5cg/viewform" class="c-social__item c-social__item--rsvp" target="_blank"
+          rel="noopener" aria-labelledby="rsvp-content">
+          <span id="rsvp-content" class="c-social__caption">
+            <span class="c-social__caption__important">RSVP</span>
+            <br>Let us know if you're coming<br>
+          </span>
+        </a>
+        <!-- <a href="http://bit.ly/keener2020album" class="c-social__item c-social__item--photos" target="_blank" rel="noopener"
+          aria-labelledby="photos-content">
+          <span id="photos-content" class="c-social__caption">
+            <span class="c-social__caption__important">Photo Album</span>
+            <br>Share &amp; View photos here
+          </span>
+        </a> -->
+        <a href="http://bit.ly/keener2020album" class="c-social__item c-social__item--stream" target="_blank" rel="noopener"
+          aria-labelledby="stream-content">
+          <span id="stream-content" class="c-social__caption">
+            <span class="c-social__caption__important">Watch it Here</span>
+            <br>After RSVP, watch the wedding here
+          </span>
+        </a>
+      </div>
     </section>
 
-    <section class="c-card c-card--skills js-skills">
+    <section class="c-card c-card--skills">
       <h3 class="c-card__header">The Story</h3>
       <div class="c-graph c-graph--languages">
         <p>
-          Before all this virus madness happened, Austin and I had planned to get married this coming May 1st.
+          Before all this virus madness happened, we had planned to get married this coming May 1st.
           Neither of us are big on throwing a huge wedding, but we did want to have a small ceremony on that date, then celebrate 
           later with a much larger group of friends and family. But, as everyone knows, this virus lockdown has
           thrown a wrench in the cogs pretty drastically! 
@@ -66,8 +86,8 @@
         <li>An internally pleased and unforgettable ring bear..er </li>
         <li>The wedding ceremony</li>
         <li>A cake cutting</li>
-        <li>Enjoying a glass of tiny-bubbles with all of you on the live stream</li>
-        <li>Probably the macarena</li>
+        <li>Enjoying a beverage of choice with all of you on the live stream</li>
+        <li>Maybe the macarena?</li>
       </ul>
     </section>
 
@@ -85,7 +105,6 @@
 <footer class="s-footer">
   &copy; 2020 Jessica &amp; Austin
 </footer>
-<link rel="stylesheet" href="assets/css/site.css">
-<script src="assets/js/site.min.js"></script>
+<script>window.addEventListener("load", function () { document.body.className += " is-loaded"; })</script>
 </body>
 </html>

@@ -1,0 +1,88 @@
+.c-social{
+ display: flex;
+ align-items: flex-start;
+ justify-content: space-between;
+
+
+ @include media(">md"){
+  flex-direction: column;
+ }
+
+ &__item{
+  // display: inline-block;
+  transition: transform .2s ease;
+  &:hover{
+   transform: translateY(-.2em);
+  }
+  @include media("<=md"){ // only put this in a media query targeting small screens because it's a PITA to un-override the owl as we scale up
+   margin: 0;
+  }
+  align-items: center;
+
+  @include media(">md"){
+   float: left;
+   display: flex;
+  }
+
+  &:before{
+   content: "";
+   display: inline-block;
+   position: relative;
+   width: 1em;
+   height: 1em;
+   margin: .2em;
+   font-size: 2.6em;
+   box-shadow: 0 0 0 .2em currentColor, 0 0.25em 0.2em 0 color(a, -3);
+   background: no-repeat 0 50%/cover currentColor;
+   border-radius: 1px;
+   @include media(">sm"){
+    font-size: 3.6em;
+   }
+   @include media(">md"){
+    float: left;
+    margin-right: .5em;
+   }
+  }
+
+  &--rsvp:before{
+   background-image: url(../images/icons/rsvp.svg);
+   color: #e4e4e4;
+  }
+  &--calendar:before{
+   background-image: url(../images/icons/calendar.svg);
+   color: #e4e4e4;
+  }
+  &--stream:before{
+  //  background-image: url(../images/icons/stream.png);
+   color: #e4e4e4;
+  }
+  &--stream:after{
+    content: "";
+    display: block;
+    background: transparent;
+    border: 1em solid transparent;
+    border-left-color: #4C3576;
+    border-width: 1.6em 0em 1.6em 2.6em;
+    left: 1.3em;
+  }
+  &--photos:before{
+   background-image: url(../images/icons/camera.svg);
+   color: #e4e4e4;
+  }
+  &--icon-only{
+   text-indent: -9999em;
+  }
+  .c-social__caption__important{
+    font-size: 1.4em;
+   }
+ }
+
+ &__caption{
+  display: none;
+  @include media(">md"){
+   display: inline-block;
+  }
+ }
+
+
+}
